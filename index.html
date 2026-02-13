@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uñas</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DH Glam Nails</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header class="header">
-    <h1>💅DH Glam Nails</h1>
-    <p>Diseños bonitos para días icónicos ✨</p>
+<!-- 🌸 PANTALLA 1 (BIENVENIDA) -->
+<section class="bienvenida" id="bienvenida">
+  <div class="overlay">
+    <h2>Recordatorio...</h2>
+    <h1>Agendar cita<br>para las uñas 💅</h1>
+    <p>♡ (55) 1234-5678</p>
+    <button onclick="entrar()">Entrar</button>
+  </div>
+</section>
+
+<!-- 💜 PANTALLA 2 (PÁGINA REAL) -->
+<section class="principal" id="principal">
+
+  <header>
+    <h1>💜 DH Glam Nails</h1>
+    <p>Belleza en cada detalle </p>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-text">
-        <h2>Reserva tu cita</h2>
-        <p>Elige un diseño y mira el precio. Si te enamoras, no me hago responsable 😌</p>
-        <button id="btnCita">Agendar cita</button>
+  <section class="servicios">
+    <h2>Tipos de Uñas</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Acrílico Esculpido</h3>
+        <p>$110.000</p>
       </div>
 
-      <div class="hero-card">
-        <h3>Promo del día 🎀</h3>
-        <p><strong>Gel + diseño sencillo</strong></p>
-        <p class="price">$60.000 COP</p>
-        <small>*Precio ejemplo</small>
+      <div class="card">
+        <h3>Acrílico con Tips</h3>
+        <p>$95.000</p>
       </div>
-    </section>
 
-    <section class="grid">
-      <article class="card">
-        <h3>French Clásico 🤍</h3>
-        <p>Elegante, limpio, siempre queda bien.</p>
-        <p class="tag">Duración: 1h</p>
-        <button class="btnVer" data-name="French Clásico" data-price="65000">Ver precio</button>
-      </article>
+      <div class="card">
+        <h3>Polygel</h3>
+        <p>$100.000</p>
+      </div>
 
-      <article class="card">
-        <h3>Baby Boomer 🌸</h3>
-        <p>Degradado suave, súper aesthetic.</p>
-        <p class="tag">Duración: 1h 30m</p>
-        <button class="btnVer" data-name="Baby Boomer" data-price="80000">Ver precio</button>
-      </article>
+      <div class="card">
+        <h3>Soft Gel</h3>
+        <p>$85.000</p>
+      </div>
+    </div>
+  </section>
 
-      <article class="card">
-        <h3>Glitter Glam ✨</h3>
-        <p>Brillitos para cuando quieres ser el evento.</p>
-        <p class="tag">Duración: 1h 30m</p>
-        <button class="btnVer" data-name="Glitter Glam" data-price="90000">Ver precio</button>
-      </article>
+  <section class="form-section">
+    <h2>Agenda tu cita 💌</h2>
 
-      <article class="card">
-        <h3>Diseño Anime 🎎</h3>
-        <p>Personajes o stickers: nivel fan.</p>
-        <p class="tag">Duración: 2h</p>
-        <button class="btnVer" data-name="Diseño Anime" data-price="120000">Ver precio</button>
-      </article>
-    </section>
+    <form class="formulario">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="tel" placeholder="Número de celular" required>
 
-    <section class="panel">
-      <h2>📌 Tu selección</h2>
-      <p id="seleccion">Aún no has seleccionado un diseño.</p>
-    </section>
-  </main>
+      <select required>
+        <option value="">Selecciona el servicio</option>
+        <option>Acrílico Esculpido</option>
+        <option>Acrílico con Tips</option>
+        <option>Polygel</option>
+        <option>Soft Gel</option>
+      </select>
 
-  <footer class="footer">
-    © 2026 — Hecho con glitter y paciencia 💖
-  </footer>
+      <input type="date" required>
 
-  <script src="script.js"></script>
+      <button type="submit">Confirmar cita 💜</button>
+    </form>
+  </section>
+
+</section>
+
+<script>
+function entrar(){
+  document.getElementById("bienvenida").style.display = "none";
+  document.getElementById("principal").style.display = "block";
+}
+</script>
+
 </body>
 </html>
