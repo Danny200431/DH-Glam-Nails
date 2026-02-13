@@ -1,4 +1,4 @@
-# DH Glam Nails 💅
+# DH Glam Nails 
 
 Esta es una página que hice para practicar HTML y CSS.
 
