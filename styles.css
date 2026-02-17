@@ -11,7 +11,6 @@
 
 .bienvenida{
   height:100vh;
-  background:url('fondo.jpg') center/cover no-repeat; /* AQUI ESTA TU IMAGEN */
   display:flex;
   justify-content:center;
   align-items:center;
@@ -101,4 +100,116 @@ header{
   color:white;
   font-weight:bold;
   cursor:pointer;
+}
+header{
+  height:350px;
+  background:url("uñas.jpg") center/cover no-repeat;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  text-align:center;
+  border-radius:0 0 30px 30px;
+}
+
+header h1{
+  font-size:40px;
+  background:rgba(0,0,0,0.4);
+  padding:10px 20px;
+  border-radius:15px;
+}
+
+header p{
+  background:rgba(0,0,0,0.4);
+  padding:8px 15px;
+  border-radius:15px;
+}
+.servicios{
+
+  background:#f8f1f1;
+  padding:80px 20px;
+  text-align:center;
+
+}
+
+.titulo-servicios{
+
+  font-size:45px;
+  color:#a16a5e;
+  margin-bottom:50px;
+
+}
+
+
+.contenedor-servicios{
+
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+
+}
+
+
+.servicio{
+
+  position:relative;
+  width:300px;
+
+}
+
+
+.servicio img{
+
+  width:100%;
+  height:400px;
+  object-fit:cover;
+
+}
+
+
+.info{
+
+  background:white;
+  padding:25px;
+
+  position:absolute;
+
+  bottom:-40px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:85%;
+
+  box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+
+.info h3{
+
+  color:#a16a5e;
+  font-size:25px;
+  margin-bottom:10px;
+
+}
+
+
+.info p{
+
+  font-size:14px;
+  margin-bottom:10px;
+
+}
+
+
+.precio{
+
+  color:#a16a5e;
+  font-weight:bold;
+  font-size:18px;
+
 }
