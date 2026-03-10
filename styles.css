@@ -182,7 +182,8 @@ header p{
 
   transform:translateX(-50%);
 
-  width:85%;
+ width: 90%;
+    height: 40%;
 
   box-shadow:0 10px 20px rgba(0,0,0,0.2);
 
@@ -211,5 +212,129 @@ header p{
   color:#a16a5e;
   font-weight:bold;
   font-size:18px;
+
+}
+
+.hero{
+
+  display:flex;
+  align-items:center;
+  justify-content:center; /* CENTRA TODO */
+
+  gap:400px; /* espacio controlado entre texto e imagen */
+
+  padding:60px 40px; /* menos espacio */
+
+  background:#f5f1f1;
+
+}
+
+
+.hero-texto{
+
+  max-width:500px; /* evita que se aleje mucho */
+
+}
+
+
+.hero-texto h1{
+
+  font-size:55px;
+  color:#9c6b5c;
+  margin-bottom:20px;
+
+}
+
+
+.hero-texto p{
+
+  font-size:18px;
+  color:#777;
+  margin-bottom:30px;
+
+}
+
+
+.hero-img img{
+
+  width:800px; /* tamaño fijo mejor controlado */
+  border-radius:10px;
+
+}
+
+
+
+
+
+
+
+
+
+.btn-reserva{
+
+  background:#9c6b5c;
+  color:white;
+  border:none;
+  padding:15px 30px;
+  font-size:16px;
+  cursor:pointer;
+
+}
+
+
+.btn-servicios{
+
+  background:transparent;
+  border:2px solid #9c6b5c;
+  padding:15px 30px;
+  font-size:16px;
+  cursor:pointer;
+  color:#9c6b5c;
+
+}
+
+
+
+.navbar{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
+  background:#f8f3f2;
+
+}
+
+
+.navbar a{
+
+  text-decoration:none;
+  color:#9c6b5c;
+  font-size:18px;
+  margin:0 15px;
+  font-weight:500;
+
+}
+
+
+.navbar a:hover{
+
+  color:#000;
+
+}
+
+
+.nav-logo img{
+
+  height:60px;
+
+}
+
+
+.nav-izq,
+.nav-der{
+
+  display:flex;
+  align-items:center;
 
 }
